@@ -1051,7 +1051,7 @@ export default function Page() {
           .logo-insane {
             height: 70px;
           }
-        }
+        } 
       `}</style>
     </>
   );
