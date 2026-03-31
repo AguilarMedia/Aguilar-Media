@@ -12,7 +12,7 @@ export default function Page() {
           <div className="container nav-wrap">
             <div className="brand fade-in-up">
               <div className="brand-mark-wrap">
-                <img src="/logo.png" alt="Aguilar Media Logo" className="logo-img logo-float" />
+                <img src="/logo-combo.svg" alt="Aguilar Media Logo" className="logo-img logo-float" />
                 <div>
                   <h1>Aguilar Media</h1>
                   <p>Luxury-level performance marketing</p>
@@ -32,7 +32,7 @@ export default function Page() {
           <section className="hero container">
             <div className="hero-copy fade-in-up delay-1">
               <div className="hero-logo-wrap">
-                <img src="/logo.png" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
+                <img src="/logo-combo.svg" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
               </div>
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
@@ -243,7 +243,7 @@ export default function Page() {
 
         <footer className="footer container">
           <div className="footer-brand">
-            <img src="/logo.png" alt="Aguilar Media Footer Logo" className="footer-logo" />
+            <img src="/logo-combo.svg" alt="Aguilar Media Footer Logo" className="footer-logo" />
             <div>
               <p>© 2026 Aguilar Media. All rights reserved.</p>
               <p>Built for clean branding, better ads, and real business growth.</p>
@@ -774,8 +774,6 @@ export default function Page() {
         @keyframes spinGlow {
           0% { transform: rotate(0deg); }
           100% { transform: rotate(360deg); }
-        }
-          50% { transform: translateY(18px) translateX(10px); }
         }
 
         @media (max-width: 980px) {
