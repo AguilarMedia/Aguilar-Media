@@ -1043,13 +1043,12 @@ export default function Page() {
           .footer-brand {
             align-items: flex-start;
           }
-
-        .hero-logo {
+.hero-logo {
   height: 240px;
 }
 
 .logo-insane {
-  height: 130px; /* 🔥 bigger */
+  height: 130px;
   width: auto;
   background: transparent;
 
@@ -1060,15 +1059,17 @@ export default function Page() {
   animation: floatLogo 4s ease-in-out infinite;
   transition: all 0.4s ease;
 }
-          .logo-insane {
-  height: 130px; /* 🔥 bigger */
-  width: auto;
-  background: transparent;
+
+.logo-insane:hover {
+  transform: scale(1.08) rotate(2deg);
 
   filter:
-    drop-shadow(0 0 12px rgba(103,232,249,0.6))
-    drop-shadow(0 0 24px rgba(168,85,247,0.6));
+    drop-shadow(0 0 20px rgba(103,232,249,0.8))
+    drop-shadow(0 0 40px rgba(168,85,247,0.8));
+}
 
-  animation: floatLogo 4s ease-in-out infinite;
-  transition: all 0.4s ease;
+@keyframes floatLogo {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
