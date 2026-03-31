@@ -12,21 +12,13 @@ export default function Page() {
           <div className="container nav-wrap">
             <div className="brand fade-in-up">
               <div className="brand-mark-wrap">
-                <div className="brand-mark" aria-hidden="true">
-                  <span className="brand-glow" />
-                  <svg viewBox="0 0 100 100" className="brand-svg" role="img">
-                    <defs>
-                      <linearGradient id="aguilarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#67e8f9" />
-                        <stop offset="55%" stopColor="#60a5fa" />
-                        <stop offset="100%" stopColor="#a855f7" />
-                      </linearGradient>
-                    </defs>
-                    <path d="M18 78 L46 18 L59 18 L33 78 Z" fill="url(#aguilarGradient)" />
-                    <path d="M56 32 L83 78 L68 78 L48 46 Z" fill="url(#aguilarGradient)" />
-                    <path d="M35 58 H61 L55 71 H29 Z" fill="url(#aguilarGradient)" />
-                  </svg>
+                <img src="/logo.png" alt="Aguilar Media Logo" className="logo-img" />
+                <div>
+                  <h1>Aguilar Media</h1>
+                  <p>Luxury-level performance marketing</p>
                 </div>
+              </div>
+            </div>
                 <div>
                   <h1>Aguilar Media</h1>
                   <p>Luxury-level performance marketing</p>
@@ -359,6 +351,19 @@ export default function Page() {
           display: flex;
           align-items: center;
           gap: 14px;
+        }
+
+        .logo-img {
+          width: 48px;
+          height: 48px;
+          object-fit: contain;
+          filter: drop-shadow(0 0 12px rgba(103,232,249,0.35));
+          transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .logo-img:hover {
+          transform: scale(1.05);
+          filter: drop-shadow(0 0 18px rgba(168,85,247,0.5));
         }
 
         .brand-mark {
