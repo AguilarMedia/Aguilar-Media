@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-
+ 
 export default function Page() {
   useEffect(() => {
     const handleMove = (e) => {
