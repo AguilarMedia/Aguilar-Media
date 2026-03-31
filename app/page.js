@@ -1,41 +1,67 @@
 "use client";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    const handleMove = (e) => {
+      const glow = document.querySelector(".cursor-glow");
+      if (glow) {
+        glow.style.left = `${e.clientX}px`;
+        glow.style.top = `${e.clientY}px`;
+      }
+    };
+
+    window.addEventListener("mousemove", handleMove);
+    return () => window.removeEventListener("mousemove", handleMove);
+  }, []);
+
   return (
     <>
       <div className="site-shell">
+        <div className="noise" />
         <div className="bg-orb orb-1" />
         <div className="bg-orb orb-2" />
+        <div className="bg-orb orb-3" />
         <div className="bg-grid" />
+        <div className="cursor-glow" />
 
         <header className="topbar elite-topbar">
           <div className="container nav-wrap elite-nav-wrap">
-            <div className="brand fade-in-up">
+            <a href="#top" className="brand fade-in-up brand-link">
               <div className="brand-mark-wrap">
-                <img src="/logo-combo.svg" alt="Aguilar Media Logo" className="h-20 md:h-24 hover:scale-105 transition duration-300" />
+                <div className="logo-wrap">
+                  <img src="/logo-combo.svg" alt="Aguilar Media Logo" className="logo-insane" />
+                  <span className="logo-shimmer" />
+                </div>
                 <div className="brand-copy">
                   <span className="brand-kicker">PREMIUM GROWTH STUDIO</span>
                   <h1>Aguilar Media</h1>
                   <p>Luxury-level performance marketing</p>
                 </div>
               </div>
-            </div>
+            </a>
+
             <nav className="nav-links elite-nav-links">
               <a href="#services">Services</a>
+              <a href="#business-help">Value</a>
               <a href="#about">About</a>
               <a href="#process">Process</a>
-              <a href="#contact">Contact</a>
               <a href="#contact" className="nav-cta">Book Call</a>
             </nav>
           </div>
         </header>
 
-        <main>
+        <main id="top">
           <section className="hero container">
             <div className="hero-copy fade-in-up delay-1">
               <div className="hero-logo-wrap">
-                <img src="/logo-combo.svg" alt="Aguilar Media Hero Logo" className="h-32 md:h-40 mx-auto mb-6 hover:scale-105 transition duration-300" />
+                <div className="hero-logo-shell">
+                  <img src="/logo-combo.svg" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
+                  <span className="hero-ring ring-1" />
+                  <span className="hero-ring ring-2" />
+                </div>
               </div>
+
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
                 We make your brand look
@@ -43,16 +69,32 @@ export default function Page() {
               </h2>
               <p>
                 Aguilar Media helps businesses attract better clients with premium design direction,
-                sharper messaging, and high-converting digital campaigns.
+                sharper messaging, creative ads, and high-converting digital campaigns backed by data.
               </p>
+
               <div className="hero-actions">
                 <a href="#contact" className="btn btn-solid">Book a Strategy Call</a>
                 <a href="#services" className="btn btn-ghost">View Services</a>
               </div>
+
+              <div className="hero-proof fade-in-up delay-2">
+                <div className="proof-card glass-card">
+                  <strong>Creative Ads</strong>
+                  <span>Attention-grabbing visuals that make brands feel premium.</span>
+                </div>
+                <div className="proof-card glass-card">
+                  <strong>Data-Led Strategy</strong>
+                  <span>Every decision is guided by performance, not guesswork.</span>
+                </div>
+                <div className="proof-card glass-card">
+                  <strong>Brand Growth</strong>
+                  <span>Cleaner positioning that helps you attract better customers.</span>
+                </div>
+              </div>
             </div>
 
-            <div className="hero-panel fade-in-up delay-2">
-              <div className="glass-card panel-main">
+            <div className="hero-panel fade-in-up delay-3">
+              <div className="glass-card panel-main tilt-card">
                 <p className="mini-label">Positioning + Performance</p>
                 <h3>Agency-level presentation with a growth-first mindset.</h3>
                 <p>
@@ -61,11 +103,11 @@ export default function Page() {
                 </p>
               </div>
               <div className="panel-grid">
-                <div className="glass-card stat-card">
+                <div className="glass-card stat-card tilt-card">
                   <strong>Premium Image</strong>
                   <span>Clean visuals. Better trust. Stronger first impression.</span>
                 </div>
-                <div className="glass-card stat-card">
+                <div className="glass-card stat-card tilt-card">
                   <strong>Higher Return</strong>
                   <span>Smarter campaigns designed to convert attention into revenue.</span>
                 </div>
@@ -94,21 +136,21 @@ export default function Page() {
             </div>
 
             <div className="card-grid services-grid">
-              <article className="glass-card service-card fade-in-up delay-1">
+              <article className="glass-card service-card fade-in-up delay-1 tilt-card">
                 <span className="card-number">01</span>
                 <h4>Creative Ad Production</h4>
                 <p>
                   We create clean, modern, attention-grabbing ad creatives that help your business stand out and instantly look more professional online.
                 </p>
               </article>
-              <article className="glass-card service-card fade-in-up delay-2">
+              <article className="glass-card service-card fade-in-up delay-2 tilt-card">
                 <span className="card-number">02</span>
                 <h4>Data-Driven Ad Strategy</h4>
                 <p>
                   We use performance data, audience behavior, and testing to make smarter decisions so your campaigns improve over time instead of relying on guesswork.
                 </p>
               </article>
-              <article className="glass-card service-card fade-in-up delay-3">
+              <article className="glass-card service-card fade-in-up delay-3 tilt-card">
                 <span className="card-number">03</span>
                 <h4>Brand Positioning</h4>
                 <p>
@@ -131,21 +173,21 @@ export default function Page() {
             </div>
 
             <div className="card-grid process-grid">
-              <article className="glass-card process-card fade-in-up delay-1">
+              <article className="glass-card process-card fade-in-up delay-1 tilt-card">
                 <span className="step">01</span>
                 <h4>Make your business look more professional</h4>
                 <p>
                   Better creative, cleaner messaging, and a more polished online presence can instantly increase trust and make your brand feel more established.
                 </p>
               </article>
-              <article className="glass-card process-card fade-in-up delay-2">
+              <article className="glass-card process-card fade-in-up delay-2 tilt-card">
                 <span className="step">02</span>
                 <h4>Reach the right audience</h4>
                 <p>
                   Instead of putting content in front of random people, I help position your business in front of the audience most likely to buy, book, or inquire.
                 </p>
               </article>
-              <article className="glass-card process-card fade-in-up delay-3">
+              <article className="glass-card process-card fade-in-up delay-3 tilt-card">
                 <span className="step">03</span>
                 <h4>Improve conversions over time</h4>
                 <p>
@@ -156,7 +198,7 @@ export default function Page() {
           </section>
 
           <section id="about" className="section container two-col">
-            <div className="glass-card about-main fade-in-up">
+            <div className="glass-card about-main fade-in-up tilt-card">
               <span className="eyebrow">About</span>
               <h3>About Aguilar Media</h3>
               <p>
@@ -176,7 +218,7 @@ export default function Page() {
               </p>
             </div>
             <div className="about-stack">
-              <div className="glass-card fade-in-up delay-1">
+              <div className="glass-card fade-in-up delay-1 tilt-card">
                 <h4>Why Choose Aguilar Media?</h4>
                 <p>
                   Most agencies focus on vanity metrics like clicks and views. We focus on what actually matters — leads, conversions, stronger brand perception, and real revenue growth.
@@ -185,13 +227,13 @@ export default function Page() {
                   Aguilar Media takes a more personal and strategic approach, building campaigns around your actual business goals instead of using the same formula for every client.
                 </p>
               </div>
-              <div className="glass-card fade-in-up delay-2">
+              <div className="glass-card fade-in-up delay-2 tilt-card">
                 <h4>Creative + Data</h4>
                 <p>
                   We combine attention-grabbing creative ads with data-driven strategies so your campaigns don’t just look good — they perform.
                 </p>
               </div>
-              <div className="glass-card fade-in-up delay-3">
+              <div className="glass-card fade-in-up delay-3 tilt-card">
                 <h4>Built to Scale</h4>
                 <p>
                   Everything we build is designed for long-term growth, helping your business scale consistently instead of relying on random results.
@@ -206,17 +248,17 @@ export default function Page() {
               <h3>How growth happens</h3>
             </div>
             <div className="card-grid process-grid">
-              <article className="glass-card process-card fade-in-up delay-1">
+              <article className="glass-card process-card fade-in-up delay-1 tilt-card">
                 <span className="step">01</span>
                 <h4>Attract</h4>
                 <p>Use stronger hooks, sharper visuals, and better positioning to get noticed by the right people.</p>
               </article>
-              <article className="glass-card process-card fade-in-up delay-2">
+              <article className="glass-card process-card fade-in-up delay-2 tilt-card">
                 <span className="step">02</span>
                 <h4>Convert</h4>
                 <p>Turn attention into action with clearer messaging, stronger offers, and a cleaner journey.</p>
               </article>
-              <article className="glass-card process-card fade-in-up delay-3">
+              <article className="glass-card process-card fade-in-up delay-3 tilt-card">
                 <span className="step">03</span>
                 <h4>Scale</h4>
                 <p>Keep refining the system so your business grows in a way that feels repeatable and premium.</p>
@@ -225,7 +267,7 @@ export default function Page() {
           </section>
 
           <section id="contact" className="section container">
-            <div className="contact-box fade-in-up">
+            <div className="contact-box fade-in-up tilt-card">
               <div>
                 <span className="eyebrow">Contact</span>
                 <h3>Let’s build a stronger brand presence.</h3>
@@ -245,7 +287,7 @@ export default function Page() {
 
         <footer className="footer container">
           <div className="footer-brand">
-            <img src="/logo-combo.svg" alt="Aguilar Media Footer Logo" className="h-16 opacity-80" />
+            <img src="/logo-combo.svg" alt="Aguilar Media Footer Logo" className="footer-logo" />
             <div>
               <p>© 2026 Aguilar Media. All rights reserved.</p>
               <p>Built for clean branding, better ads, and real business growth.</p>
@@ -290,6 +332,17 @@ export default function Page() {
             linear-gradient(180deg, #020617 0%, #020817 45%, #040b1e 100%);
         }
 
+        .noise {
+          position: fixed;
+          inset: 0;
+          background-image:
+            radial-gradient(rgba(255,255,255,0.05) 0.6px, transparent 0.6px);
+          background-size: 7px 7px;
+          opacity: 0.06;
+          pointer-events: none;
+          z-index: 0;
+        }
+
         .bg-orb {
           position: fixed;
           border-radius: 999px;
@@ -317,6 +370,15 @@ export default function Page() {
           animation-delay: 2s;
         }
 
+        .orb-3 {
+          width: 420px;
+          height: 420px;
+          background: rgba(168, 85, 247, 0.18);
+          bottom: -120px;
+          left: 20%;
+          animation-delay: 4s;
+        }
+
         .bg-grid {
           position: fixed;
           inset: 0;
@@ -327,6 +389,17 @@ export default function Page() {
           mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent 80%);
           pointer-events: none;
           z-index: 0;
+        }
+
+        .cursor-glow {
+          position: fixed;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(103,232,249,0.12), transparent 70%);
+          pointer-events: none;
+          z-index: 0;
+          transform: translate(-50%, -50%);
+          opacity: 0.85;
         }
 
         .container {
@@ -363,101 +436,42 @@ export default function Page() {
           padding: 18px 0;
         }
 
+        .brand-link {
+          display: inline-flex;
+        }
+
         .brand-mark-wrap {
           display: flex;
           align-items: center;
           gap: 14px;
         }
 
-        .logo-img {
-          width: 48px;
-          height: 48px;
-          object-fit: contain;
-          filter: drop-shadow(0 0 12px rgba(103,232,249,0.35));
+        .logo-wrap {
+          position: relative;
+          overflow: hidden;
+          border-radius: 20px;
+        }
+
+        .logo-insane {
+          height: 90px;
+          animation: floatLogo 4s ease-in-out infinite, glowPulse 2.5s ease-in-out infinite;
+          position: relative;
+          z-index: 2;
           transition: transform 0.3s ease, filter 0.3s ease;
         }
 
-        .logo-img:hover {
-          transform: scale(1.05);
-          filter: drop-shadow(0 0 18px rgba(168,85,247,0.5));
+        .logo-insane:hover {
+          transform: scale(1.06) rotate(-1deg);
+          filter: drop-shadow(0 0 20px rgba(168,85,247,0.9));
         }
 
-        .logo-float {
-          animation: logoFloat 3.5s ease-in-out infinite;
-        }
-
-        .hero-logo-wrap {
-          margin-bottom: 22px;
-        }
-
-        .hero-logo {
-          width: 90px;
-          height: 90px;
-          object-fit: contain;
-          filter: drop-shadow(0 0 24px rgba(103,232,249,0.35));
-        }
-
-        .pulse-glow {
-          animation: pulseGlow 2.8s ease-in-out infinite;
-        }
-
-        .footer-brand {
-          display: flex;
-          align-items: center;
-          gap: 14px;
-        }
-
-        .footer-logo {
-          width: 40px;
-          height: 40px;
-          object-fit: contain;
-          filter: drop-shadow(0 0 12px rgba(103,232,249,0.25));
-        }
-
-        .favicon-note {
-          color: #64748b;
-        }
-
-        .brand-mark {
-          position: relative;
-          display: grid;
-          place-items: center;
-          width: 52px;
-          height: 52px;
-          border-radius: 18px;
-          background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-          border: 1px solid rgba(255,255,255,0.12);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.28);
-          overflow: hidden;
-        }
-
-        .brand-glow {
+        .logo-shimmer {
           position: absolute;
-          inset: -20%;
-          background: conic-gradient(from 180deg, rgba(103,232,249,0.0), rgba(103,232,249,0.28), rgba(168,85,247,0.28), rgba(103,232,249,0.0));
-          filter: blur(12px);
-          animation: spinGlow 7s linear infinite;
-        }
-
-        .brand-svg {
-          position: relative;
-          width: 34px;
-          height: 34px;
+          inset: 0;
+          background: linear-gradient(120deg, transparent, rgba(255,255,255,0.28), transparent);
+          animation: shimmer 3s infinite;
           z-index: 1;
-          animation: floatLogo 3.4s ease-in-out infinite;
-          filter: drop-shadow(0 0 14px rgba(103,232,249,0.28));
-        }
-
-        .brand h1 {
-          margin: 0;
-          font-size: 1.65rem;
-          letter-spacing: -0.04em;
-        }
-
-        .brand p {
-          margin: 6px 0 0;
-          color: #94a3b8;
-          font-size: 0.95rem;
+          pointer-events: none;
         }
 
         .brand-copy {
@@ -471,6 +485,18 @@ export default function Page() {
           letter-spacing: 0.18em;
           margin-bottom: 4px;
           opacity: 0.9;
+        }
+
+        .brand h1 {
+          margin: 0;
+          font-size: 1.65rem;
+          letter-spacing: -0.04em;
+        }
+
+        .brand p {
+          margin: 6px 0 0;
+          color: #94a3b8;
+          font-size: 0.95rem;
         }
 
         .nav-links {
@@ -489,20 +515,6 @@ export default function Page() {
           border-radius: 999px;
           box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
           backdrop-filter: blur(12px);
-        }
-
-        .nav-cta {
-          padding: 12px 18px;
-          border-radius: 999px;
-          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
-          color: #020617;
-          font-weight: 800;
-          box-shadow: 0 10px 30px rgba(103,232,249,0.18);
-        }
-
-        .nav-cta:hover {
-          transform: translateY(-1px);
-          color: #020617 !important;
         }
 
         .nav-links a:hover {
@@ -528,12 +540,66 @@ export default function Page() {
           width: 100%;
         }
 
+        .nav-cta {
+          padding: 12px 18px;
+          border-radius: 999px;
+          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
+          color: #020617;
+          font-weight: 800;
+          box-shadow: 0 10px 30px rgba(103,232,249,0.18);
+        }
+
+        .nav-cta:hover {
+          transform: translateY(-1px);
+          color: #020617 !important;
+        }
+
         .hero {
           display: grid;
           grid-template-columns: 1.1fr 0.9fr;
           gap: 48px;
           align-items: center;
           padding: 96px 0 56px;
+        }
+
+        .hero-logo-wrap {
+          margin-bottom: 24px;
+        }
+
+        .hero-logo-shell {
+          position: relative;
+          display: inline-grid;
+          place-items: center;
+        }
+
+        .hero-logo {
+          height: 150px;
+          position: relative;
+          z-index: 2;
+          filter: drop-shadow(0 0 24px rgba(103,232,249,0.35));
+        }
+
+        .pulse-glow {
+          animation: heroFloat 3.6s ease-in-out infinite, glowPulse 2.8s ease-in-out infinite;
+        }
+
+        .hero-ring {
+          position: absolute;
+          border-radius: 999px;
+          border: 2px solid rgba(103,232,249,0.3);
+          animation: pulseRing 4s infinite;
+          z-index: 1;
+        }
+
+        .ring-1 {
+          width: 135%;
+          height: 135%;
+        }
+
+        .ring-2 {
+          width: 168%;
+          height: 168%;
+          animation-delay: 1.4s;
         }
 
         .eyebrow {
@@ -579,6 +645,34 @@ export default function Page() {
           margin-top: 32px;
         }
 
+        .hero-proof {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 14px;
+          margin-top: 30px;
+        }
+
+        .proof-card {
+          padding: 16px;
+          border-radius: 18px;
+          transition: transform 0.3s ease;
+        }
+
+        .proof-card:hover {
+          transform: translateY(-6px);
+        }
+
+        .proof-card strong {
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        .proof-card span {
+          color: #94a3b8;
+          font-size: 0.92rem;
+          line-height: 1.6;
+        }
+
         .btn {
           display: inline-flex;
           align-items: center;
@@ -587,6 +681,8 @@ export default function Page() {
           border-radius: 18px;
           font-weight: 700;
           transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+          position: relative;
+          overflow: hidden;
         }
 
         .btn:hover {
@@ -597,6 +693,22 @@ export default function Page() {
           background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
           color: #020617;
           box-shadow: 0 18px 48px rgba(103,232,249,0.2);
+        }
+
+        .btn-solid::after {
+          content: "";
+          position: absolute;
+          width: 200%;
+          height: 200%;
+          background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+          top: -50%;
+          left: -50%;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .btn-solid:hover::after {
+          opacity: 1;
         }
 
         .btn-ghost {
@@ -614,6 +726,16 @@ export default function Page() {
           border: 1px solid rgba(255,255,255,0.1);
           box-shadow: 0 20px 60px rgba(0,0,0,0.28);
           backdrop-filter: blur(14px);
+        }
+
+        .tilt-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tilt-card:hover {
+          transform: translateY(-8px) scale(1.01);
+          box-shadow: 0 28px 80px rgba(0,0,0,0.34);
+          border-color: rgba(103,232,249,0.18);
         }
 
         .hero-panel {
@@ -698,6 +820,12 @@ export default function Page() {
           padding: 16px 18px;
           text-align: center;
           font-size: 0.95rem;
+          transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .logo-strip div:hover {
+          transform: translateY(-5px);
+          border-color: rgba(103,232,249,0.22);
         }
 
         .section {
@@ -771,6 +899,13 @@ export default function Page() {
           padding: 15px 16px;
           font: inherit;
           outline: none;
+          transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+          border-color: rgba(103,232,249,0.5);
+          box-shadow: 0 0 0 4px rgba(103,232,249,0.08);
         }
 
         .contact-form textarea {
@@ -798,6 +933,16 @@ export default function Page() {
           gap: 14px;
         }
 
+        .footer-logo {
+          height: 58px;
+          width: auto;
+          filter: drop-shadow(0 0 12px rgba(103,232,249,0.25));
+        }
+
+        .favicon-note {
+          color: #64748b;
+        }
+
         .fade-in-up {
           opacity: 0;
           transform: translateY(28px);
@@ -807,22 +952,6 @@ export default function Page() {
         .delay-1 { animation-delay: 0.12s; }
         .delay-2 { animation-delay: 0.24s; }
         .delay-3 { animation-delay: 0.36s; }
-
-        @keyframes logoFloat {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-4px); }
-        }
-
-        @keyframes pulseGlow {
-          0%, 100% {
-            transform: scale(1);
-            filter: drop-shadow(0 0 18px rgba(103,232,249,0.28));
-          }
-          50% {
-            transform: scale(1.04);
-            filter: drop-shadow(0 0 28px rgba(168,85,247,0.45));
-          }
-        }
 
         @keyframes fadeInUp {
           to {
@@ -837,13 +966,32 @@ export default function Page() {
         }
 
         @keyframes floatLogo {
-          0%, 100% { transform: translateY(0px) scale(1); }
-          50% { transform: translateY(-3px) scale(1.03); }
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-8px); }
+          100% { transform: translateY(0px); }
         }
 
-        @keyframes spinGlow {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
+        @keyframes heroFloat {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+        }
+
+        @keyframes glowPulse {
+          0% { filter: drop-shadow(0 0 0px rgba(103,232,249,0.3)); }
+          50% { filter: drop-shadow(0 0 20px rgba(103,232,249,0.7)); }
+          100% { filter: drop-shadow(0 0 0px rgba(103,232,249,0.3)); }
+        }
+
+        @keyframes shimmer {
+          0% { transform: translateX(-120%); }
+          100% { transform: translateX(120%); }
+        }
+
+        @keyframes pulseRing {
+          0% { transform: scale(0.9); opacity: 0.4; }
+          50% { transform: scale(1.1); opacity: 0.9; }
+          100% { transform: scale(0.9); opacity: 0.4; }
         }
 
         @media (max-width: 980px) {
@@ -856,12 +1004,11 @@ export default function Page() {
           .services-grid,
           .process-grid,
           .logo-strip,
-          .panel-grid {
+          .panel-grid,
+          .hero-proof {
             grid-template-columns: 1fr;
           }
-        }
 
-        @media (max-width: 980px) {
           .elite-nav-wrap {
             flex-direction: column;
             align-items: flex-start;
@@ -897,8 +1044,11 @@ export default function Page() {
           }
 
           .hero-logo {
-            width: 72px;
-            height: 72px;
+            height: 110px;
+          }
+
+          .logo-insane {
+            height: 70px;
           }
         }
       `}</style>
