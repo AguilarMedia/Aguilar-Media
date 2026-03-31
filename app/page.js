@@ -1049,7 +1049,31 @@ export default function Page() {
           }
 
           .logo-insane {
-            height: 70px;
+  height: 80px;
+  width: auto;
+  background: transparent;
+
+  /* glow */
+  filter:
+    drop-shadow(0 0 10px rgba(103,232,249,0.5))
+    drop-shadow(0 0 20px rgba(168,85,247,0.5));
+
+  /* smooth movement */
+  animation: floatLogo 4s ease-in-out infinite;
+  transition: all 0.4s ease;
+}
+
+.logo-insane:hover {
+  transform: scale(1.08) rotate(2deg);
+  filter:
+    drop-shadow(0 0 20px rgba(103,232,249,0.8))
+    drop-shadow(0 0 40px rgba(168,85,247,0.8));
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
           }
         } 
       `}</style>
