@@ -12,13 +12,7 @@ export default function Page() {
           <div className="container nav-wrap">
             <div className="brand fade-in-up">
               <div className="brand-mark-wrap">
-                <img src="/logo.png" alt="Aguilar Media Logo" className="logo-img" />
-                <div>
-                  <h1>Aguilar Media</h1>
-                  <p>Luxury-level performance marketing</p>
-                </div>
-              </div>
-            </div>
+                <img src="/logo.png" alt="Aguilar Media Logo" className="logo-img logo-float" />
                 <div>
                   <h1>Aguilar Media</h1>
                   <p>Luxury-level performance marketing</p>
@@ -37,6 +31,9 @@ export default function Page() {
         <main>
           <section className="hero container">
             <div className="hero-copy fade-in-up delay-1">
+              <div className="hero-logo-wrap">
+                <img src="/logo.png" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
+              </div>
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
                 We make your brand look
@@ -245,8 +242,14 @@ export default function Page() {
         </main>
 
         <footer className="footer container">
-          <p>© 2026 Aguilar Media. All rights reserved.</p>
-          <p>Built for clean branding, better ads, and real business growth.</p>
+          <div className="footer-brand">
+            <img src="/logo.png" alt="Aguilar Media Footer Logo" className="footer-logo" />
+            <div>
+              <p>© 2026 Aguilar Media. All rights reserved.</p>
+              <p>Built for clean branding, better ads, and real business growth.</p>
+            </div>
+          </div>
+          <p className="favicon-note">Use this same logo as your site favicon.</p>
         </footer>
       </div>
 
@@ -364,6 +367,42 @@ export default function Page() {
         .logo-img:hover {
           transform: scale(1.05);
           filter: drop-shadow(0 0 18px rgba(168,85,247,0.5));
+        }
+
+        .logo-float {
+          animation: logoFloat 3.5s ease-in-out infinite;
+        }
+
+        .hero-logo-wrap {
+          margin-bottom: 22px;
+        }
+
+        .hero-logo {
+          width: 90px;
+          height: 90px;
+          object-fit: contain;
+          filter: drop-shadow(0 0 24px rgba(103,232,249,0.35));
+        }
+
+        .pulse-glow {
+          animation: pulseGlow 2.8s ease-in-out infinite;
+        }
+
+        .footer-brand {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+
+        .footer-logo {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+          filter: drop-shadow(0 0 12px rgba(103,232,249,0.25));
+        }
+
+        .favicon-note {
+          color: #64748b;
         }
 
         .brand-mark {
@@ -683,6 +722,12 @@ export default function Page() {
           font-size: 0.95rem;
         }
 
+        .footer-brand {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+
         .fade-in-up {
           opacity: 0;
           transform: translateY(28px);
@@ -692,6 +737,22 @@ export default function Page() {
         .delay-1 { animation-delay: 0.12s; }
         .delay-2 { animation-delay: 0.24s; }
         .delay-3 { animation-delay: 0.36s; }
+
+        @keyframes logoFloat {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-4px); }
+        }
+
+        @keyframes pulseGlow {
+          0%, 100% {
+            transform: scale(1);
+            filter: drop-shadow(0 0 18px rgba(103,232,249,0.28));
+          }
+          50% {
+            transform: scale(1.04);
+            filter: drop-shadow(0 0 28px rgba(168,85,247,0.45));
+          }
+        }
 
         @keyframes fadeInUp {
           to {
@@ -747,6 +808,15 @@ export default function Page() {
 
           .footer {
             flex-direction: column;
+          }
+
+          .footer-brand {
+            align-items: flex-start;
+          }
+
+          .hero-logo {
+            width: 72px;
+            height: 72px;
           }
         }
       `}</style>
