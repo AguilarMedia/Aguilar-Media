@@ -1,0 +1,28 @@
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c6ff"/>
+      <stop offset="100%" stop-color="#7f5af0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <rect width="600" height="150" rx="20" fill="#0b0f1a"/>
+
+  <!-- Logo text -->
+  <text x="50%" y="55%" text-anchor="middle"
+    font-family="Inter, Arial, sans-serif"
+    font-size="48"
+    font-weight="700"
+    fill="url(#grad)">
+    Aguilar Media
+  </text>
+
+  <!-- Subtext -->
+  <text x="50%" y="80%" text-anchor="middle"
+    font-family="Inter, Arial, sans-serif"
+    font-size="16"
+    fill="#9ca3af">
+    Performance Marketing
+  </text>
+</svg>
