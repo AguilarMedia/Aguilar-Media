@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function Page() {
   useEffect(() => {
-    const handleMove = (e) => {
+    const handleMove = (e) => { 
       const glow = document.querySelector(".cursor-glow");
       if (glow) {
         glow.style.left = `${e.clientX}px`;
