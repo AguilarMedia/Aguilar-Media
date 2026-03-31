@@ -1073,3 +1073,7 @@ export default function Page() {
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+      `}</style>
+</>
+);
+}
