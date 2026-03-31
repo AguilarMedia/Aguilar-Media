@@ -1,4 +1,5 @@
 "use client";
+
 export default function Page() {
   return (
     <>
@@ -226,7 +227,7 @@ export default function Page() {
         .orb-1 {
           width: 320px;
           height: 320px;
-          background: rgba(34, 211, 238, 0.18);
+          background: rgba(34, 211, 238, 0.24);
           top: -80px;
           left: -90px;
         }
@@ -234,7 +235,7 @@ export default function Page() {
         .orb-2 {
           width: 380px;
           height: 380px;
-          background: rgba(96, 165, 250, 0.14);
+          background: rgba(168, 85, 247, 0.22);
           top: 120px;
           right: -120px;
           animation-delay: 2s;
@@ -310,9 +311,9 @@ export default function Page() {
           display: inline-flex;
           padding: 10px 16px;
           border-radius: 999px;
-          border: 1px solid rgba(34, 211, 238, 0.24);
-          background: rgba(255,255,255,0.05);
-          color: #67e8f9;
+          border: 1px solid rgba(168, 85, 247, 0.28);
+          background: linear-gradient(135deg, rgba(103,232,249,0.12), rgba(168,85,247,0.12));
+          color: #c4b5fd;
           font-size: 0.84rem;
           letter-spacing: 0.04em;
           margin-bottom: 20px;
@@ -328,7 +329,7 @@ export default function Page() {
 
         .hero-copy h2 span {
           display: block;
-          background: linear-gradient(90deg, #ffffff 0%, #bae6fd 42%, #94a3b8 100%);
+          background: linear-gradient(90deg, #ffffff 0%, #67e8f9 38%, #a855f7 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
@@ -364,9 +365,9 @@ export default function Page() {
         }
 
         .btn-solid {
-          background: #fff;
+          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
           color: #020617;
-          box-shadow: 0 16px 40px rgba(255,255,255,0.12);
+          box-shadow: 0 18px 48px rgba(103,232,249,0.2);
         }
 
         .btn-ghost {
@@ -495,6 +496,7 @@ export default function Page() {
         .step {
           display: inline-block;
           color: #67e8f9;
+          text-shadow: 0 0 18px rgba(103,232,249,0.35);
           font-size: 0.92rem;
           font-weight: 700;
           margin-bottom: 18px;
