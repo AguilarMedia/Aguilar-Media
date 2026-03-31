@@ -396,7 +396,7 @@ export default function Page() {
           position: fixed;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle, rgba(103,232,249,0.12), transparent 70%);
+          background: radial-gradient(circle, rgba(59,130,246,0.10), transparent 70%);
           pointer-events: none;
           z-index: 0;
           transform: translate(-50%, -50%);
@@ -481,7 +481,7 @@ export default function Page() {
         }
 
         .brand-kicker {
-          color: #67e8f9;
+          color: #3b82f6;
           font-size: 0.68rem;
           letter-spacing: 0.18em;
           margin-bottom: 4px;
@@ -533,7 +533,7 @@ export default function Page() {
           bottom: -6px;
           width: 0;
           height: 2px;
-          background: linear-gradient(90deg, #67e8f9, #a855f7);
+          background: linear-gradient(90deg, #3b82f6, #8b5cf6);
           transition: width 0.25s ease;
         }
 
@@ -544,7 +544,7 @@ export default function Page() {
         .nav-cta {
           padding: 12px 18px;
           border-radius: 999px;
-          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
+          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
           color: #020617;
           font-weight: 800;
           box-shadow: 0 10px 30px rgba(103,232,249,0.18);
@@ -625,7 +625,7 @@ export default function Page() {
 
         .hero-copy h2 span {
           display: block;
-          background: linear-gradient(90deg, #ffffff 0%, #67e8f9 38%, #a855f7 100%);
+          background: linear-gradient(90deg, #ffffff 0%, #3b82f6 38%, #8b5cf6 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
@@ -691,7 +691,7 @@ export default function Page() {
         }
 
         .btn-solid {
-          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
+          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
           color: #020617;
           box-shadow: 0 18px 48px rgba(103,232,249,0.2);
         }
@@ -853,7 +853,7 @@ export default function Page() {
         .card-number,
         .step {
           display: inline-block;
-          color: #67e8f9;
+          color: #3b82f6;
           text-shadow: 0 0 18px rgba(103,232,249,0.35);
           font-size: 0.92rem;
           font-weight: 700;
@@ -1056,8 +1056,8 @@ export default function Page() {
   object-fit: contain;
 
   filter:
-    drop-shadow(0 0 12px rgba(103,232,249,0.6))
-    drop-shadow(0 0 24px rgba(168,85,247,0.6));
+  drop-shadow(0 0 12px rgba(59,130,246,0.6))
+  drop-shadow(0 0 24px rgba(139,92,246,0.6));
 
   animation: floatLogo 4s ease-in-out infinite;
   transition: all 0.4s ease;
@@ -1067,9 +1067,8 @@ export default function Page() {
   transform: scale(1.08) rotate(2deg);
 
   filter:
-    drop-shadow(0 0 20px rgba(103,232,249,0.8))
-    drop-shadow(0 0 40px rgba(168,85,247,0.8));
-}
+  drop-shadow(0 0 16px rgba(59,130,246,0.6))
+drop-shadow(0 0 28px rgba(139,92,246,0.5));
 
 @keyframes floatLogo {
   0% { transform: translateY(0px); }
