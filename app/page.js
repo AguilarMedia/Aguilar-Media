@@ -31,7 +31,7 @@ export default function Page() {
             <a href="#top" className="brand fade-in-up brand-link">
               <div className="brand-mark-wrap">
                 <div className="logo-wrap">
-                  <img src="/logo-combo.svg" alt="Aguilar Media Logo" className="logo-insane" />
+                  <img src="/logo-premium.png" alt="Aguilar Media Logo" className="logo-insane" />
                   <span className="logo-shimmer" />
                 </div>
                 <div className="brand-copy">
@@ -57,7 +57,7 @@ export default function Page() {
             <div className="hero-copy fade-in-up delay-1">
               <div className="hero-logo-wrap">
                 <div className="hero-logo-shell">
-                  <img src="/logo-combo.svg" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
+                  <img src="/logo-premium.png" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
                   <span className="hero-ring ring-1" />
                   <span className="hero-ring ring-2" />
                 </div>
@@ -288,7 +288,7 @@ export default function Page() {
 
         <footer className="footer container">
           <div className="footer-brand">
-            <img src="/logo-combo.svg" alt="Aguilar Media Footer Logo" className="footer-logo" />
+            <img src="/logo-premium.png" alt="Aguilar Media Footer Logo" className="footer-logo" />
             <div>
               <p>© 2026 Aguilar Media. All rights reserved.</p>
               <p>Built for clean branding, better ads, and real business growth.</p>
