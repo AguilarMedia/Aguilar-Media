@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function Page() {
   useEffect(() => {
-    const handleMove = (e) => { 
+    const handleMove = (e) => {
       const glow = document.querySelector(".cursor-glow");
       if (glow) {
         glow.style.left = `${e.clientX}px`;
@@ -18,7 +18,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="site-shell"> 
+      <div className="site-shell">
         <div className="noise" />
         <div className="bg-orb orb-1" />
         <div className="bg-orb orb-2" />
@@ -30,7 +30,11 @@ export default function Page() {
           <div className="container nav-wrap elite-nav-wrap">
             <a href="#top" className="brand fade-in-up brand-link">
               <div className="brand-mark-wrap">
-                <div className="logo-wrap">
+                <div className="logo-wrap logo-crazy-wrap">
+                  <span className="logo-ring logo-ring-1" />
+                  <span className="logo-ring logo-ring-2" />
+                  <span className="logo-spark logo-spark-1" />
+                  <span className="logo-spark logo-spark-2" />
                   <img src="/logo-premium.png" alt="Aguilar Media Logo" className="logo-insane" />
                   <span className="logo-shimmer" />
                 </div>
@@ -46,6 +50,7 @@ export default function Page() {
               <a href="#services">Services</a>
               <a href="#business-help">Value</a>
               <a href="#about">About</a>
+              <a href="#case-study">Results</a>
               <a href="#process">Process</a>
               <a href="#contact" className="nav-cta">Book Call</a>
             </nav>
@@ -57,9 +62,11 @@ export default function Page() {
             <div className="hero-copy fade-in-up delay-1">
               <div className="hero-logo-wrap">
                 <div className="hero-logo-shell">
-                  <img src="/logo-premium.png" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
                   <span className="hero-ring ring-1" />
                   <span className="hero-ring ring-2" />
+                  <span className="hero-ring ring-3" />
+                  <img src="/logo-premium.png" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow hero-logo-crazy" />
+                  <span className="hero-shimmer" />
                 </div>
               </div>
 
@@ -243,6 +250,55 @@ export default function Page() {
             </div>
           </section>
 
+          <section id="case-study" className="section container">
+            <div className="section-head fade-in-up">
+              <span className="eyebrow">Case Study</span>
+              <h3>Results that show what strong creative and strategy can do</h3>
+              <p>
+                This example shows how better positioning, stronger ad creative, and cleaner campaign strategy can help a brand get more attention, stronger engagement, and better conversion performance.
+              </p>
+            </div>
+
+            <div className="case-study-grid">
+              <div className="glass-card case-main fade-in-up tilt-card">
+                <span className="case-tag">Featured Result</span>
+                <h4>Premium apparel brand growth campaign</h4>
+                <p>
+                  We improved the brand’s presentation with cleaner visuals, sharper messaging, and stronger creative direction. Then we supported that with more focused ad strategy and data-based optimization.
+                </p>
+                <div className="case-metrics">
+                  <div className="metric-card">
+                    <strong>+42%</strong>
+                    <span>Higher click-through rate</span>
+                  </div>
+                  <div className="metric-card">
+                    <strong>+31%</strong>
+                    <span>More qualified leads</span>
+                  </div>
+                  <div className="metric-card">
+                    <strong>-22%</strong>
+                    <span>Lower cost per result</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="case-side">
+                <div className="glass-card fade-in-up delay-1 tilt-card">
+                  <h4>What changed</h4>
+                  <p>
+                    We upgraded the creative style, improved the brand’s offer positioning, and tested stronger hooks designed to stop attention and drive more serious traffic.
+                  </p>
+                </div>
+                <div className="glass-card fade-in-up delay-2 tilt-card">
+                  <h4>Why it worked</h4>
+                  <p>
+                    Instead of relying on random content, the campaign was built around visuals that felt premium and messaging that was aligned with what the audience actually responded to.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section id="process" className="section container">
             <div className="section-head fade-in-up">
               <span className="eyebrow">Process</span>
@@ -396,7 +452,7 @@ export default function Page() {
           position: fixed;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle, rgba(59,130,246,0.10), transparent 70%);
+          background: radial-gradient(circle, rgba(103,232,249,0.12), transparent 70%);
           pointer-events: none;
           z-index: 0;
           transform: translate(-50%, -50%);
@@ -449,8 +505,60 @@ export default function Page() {
 
         .logo-wrap {
           position: relative;
-          overflow: hidden;
+          overflow: visible;
           border-radius: 20px;
+          display: inline-grid;
+          place-items: center;
+        }
+
+        .logo-crazy-wrap {
+          isolation: isolate;
+        }
+
+        .logo-ring {
+          position: absolute;
+          inset: 50% auto auto 50%;
+          border-radius: 999px;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .logo-ring-1 {
+          width: 110%;
+          height: 110%;
+          border: 1.5px solid rgba(103,232,249,0.38);
+          animation: orbitPulse 3.2s ease-in-out infinite;
+        }
+
+        .logo-ring-2 {
+          width: 128%;
+          height: 128%;
+          border: 1px solid rgba(168,85,247,0.34);
+          animation: orbitSpin 7s linear infinite;
+        }
+
+        .logo-spark {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 999px;
+          background: radial-gradient(circle, rgba(255,255,255,0.95), rgba(103,232,249,0.25));
+          box-shadow: 0 0 18px rgba(103,232,249,0.8);
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        .logo-spark-1 {
+          top: 8%;
+          right: 4%;
+          animation: sparkle 2.2s ease-in-out infinite;
+        }
+
+        .logo-spark-2 {
+          bottom: 10%;
+          left: 2%;
+          animation: sparkle 2.2s ease-in-out infinite 1.1s;
         }
 
         .logo-insane {
@@ -459,6 +567,7 @@ export default function Page() {
           position: relative;
           z-index: 2;
           transition: transform 0.3s ease, filter 0.3s ease;
+          transform-origin: center;
         }
 
         .logo-insane:hover {
@@ -466,13 +575,20 @@ export default function Page() {
           filter: drop-shadow(0 0 20px rgba(168,85,247,0.9));
         }
 
+        .hero-logo:hover {
+          transform: scale(1.04);
+          filter: drop-shadow(0 0 32px rgba(168,85,247,0.6));
+        }
+
         .logo-shimmer {
           position: absolute;
-          inset: 0;
-          background: linear-gradient(120deg, transparent, rgba(255,255,255,0.28), transparent);
-          animation: shimmer 3s infinite;
-          z-index: 1;
+          inset: -4px;
+          background: linear-gradient(120deg, transparent 15%, rgba(255,255,255,0.4), transparent 85%);
+          animation: shimmer 2.6s infinite;
+          z-index: 3;
           pointer-events: none;
+          mix-blend-mode: screen;
+          border-radius: 20px;
         }
 
         .brand-copy {
@@ -481,7 +597,7 @@ export default function Page() {
         }
 
         .brand-kicker {
-          color: #3b82f6;
+          color: #67e8f9;
           font-size: 0.68rem;
           letter-spacing: 0.18em;
           margin-bottom: 4px;
@@ -533,7 +649,7 @@ export default function Page() {
           bottom: -6px;
           width: 0;
           height: 2px;
-          background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+          background: linear-gradient(90deg, #67e8f9, #a855f7);
           transition: width 0.25s ease;
         }
 
@@ -544,7 +660,7 @@ export default function Page() {
         .nav-cta {
           padding: 12px 18px;
           border-radius: 999px;
-          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
           color: #020617;
           font-weight: 800;
           box-shadow: 0 10px 30px rgba(103,232,249,0.18);
@@ -571,6 +687,16 @@ export default function Page() {
           position: relative;
           display: inline-grid;
           place-items: center;
+          isolation: isolate;
+        }
+
+        .hero-shimmer {
+          position: absolute;
+          inset: -8px;
+          background: linear-gradient(120deg, transparent 18%, rgba(255,255,255,0.26), transparent 82%);
+          animation: shimmer 3s infinite;
+          z-index: 3;
+          pointer-events: none;
         }
 
         .hero-logo {
@@ -578,6 +704,7 @@ export default function Page() {
           position: relative;
           z-index: 2;
           filter: drop-shadow(0 0 24px rgba(103,232,249,0.35));
+          transform-origin: center;
         }
 
         .pulse-glow {
@@ -603,6 +730,13 @@ export default function Page() {
           animation-delay: 1.4s;
         }
 
+        .ring-3 {
+          width: 196%;
+          height: 196%;
+          border: 1px solid rgba(255,255,255,0.12);
+          animation: orbitSpinReverse 9s linear infinite;
+        }
+
         .eyebrow {
           display: inline-flex;
           padding: 10px 16px;
@@ -625,7 +759,7 @@ export default function Page() {
 
         .hero-copy h2 span {
           display: block;
-          background: linear-gradient(90deg, #ffffff 0%, #3b82f6 38%, #8b5cf6 100%);
+          background: linear-gradient(90deg, #ffffff 0%, #67e8f9 38%, #a855f7 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
@@ -691,7 +825,7 @@ export default function Page() {
         }
 
         .btn-solid {
-          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
           color: #020617;
           box-shadow: 0 18px 48px rgba(103,232,249,0.2);
         }
@@ -806,6 +940,74 @@ export default function Page() {
           font-size: 0.98rem;
         }
 
+        .case-study-grid {
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 22px;
+          align-items: stretch;
+        }
+
+        .case-main,
+        .case-side .glass-card {
+          border-radius: 28px;
+          padding: 28px;
+        }
+
+        .case-tag {
+          display: inline-flex;
+          padding: 8px 14px;
+          border-radius: 999px;
+          background: rgba(59,130,246,0.12);
+          border: 1px solid rgba(59,130,246,0.24);
+          color: #bfdbfe;
+          font-size: 0.82rem;
+          margin-bottom: 16px;
+        }
+
+        .case-main h4,
+        .case-side h4 {
+          margin: 0 0 14px;
+          font-size: 1.4rem;
+        }
+
+        .case-main p,
+        .case-side p {
+          color: #cbd5e1;
+          line-height: 1.8;
+        }
+
+        .case-metrics {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 14px;
+          margin-top: 24px;
+        }
+
+        .metric-card {
+          padding: 18px;
+          border-radius: 22px;
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .metric-card strong {
+          display: block;
+          font-size: 1.8rem;
+          color: #bfdbfe;
+          margin-bottom: 8px;
+        }
+
+        .metric-card span {
+          color: #94a3b8;
+          font-size: 0.92rem;
+          line-height: 1.5;
+        }
+
+        .case-side {
+          display: grid;
+          gap: 20px;
+        }
+
         .logo-strip {
           display: grid;
           grid-template-columns: repeat(5, 1fr);
@@ -853,7 +1055,7 @@ export default function Page() {
         .card-number,
         .step {
           display: inline-block;
-          color: #3b82f6;
+          color: #67e8f9;
           text-shadow: 0 0 18px rgba(103,232,249,0.35);
           font-size: 0.92rem;
           font-weight: 700;
@@ -973,7 +1175,16 @@ export default function Page() {
         }
 
         @keyframes heroFloat {
-          0% { transform: translateY(0px); }
+          0% { transform: translateY(0px) scale(1); }
+          50% { transform: translateY(-10px) scale(1.02); }
+          100% { transform: translateY(0px) scale(1); }
+        }
+
+        @keyframes logoSpinGlow {
+          0% { filter: drop-shadow(0 0 10px rgba(103,232,249,0.28)); }
+          50% { filter: drop-shadow(0 0 28px rgba(168,85,247,0.55)); }
+          100% { filter: drop-shadow(0 0 10px rgba(103,232,249,0.28)); }
+        }
           50% { transform: translateY(-10px); }
           100% { transform: translateY(0px); }
         }
@@ -995,6 +1206,26 @@ export default function Page() {
           100% { transform: scale(0.9); opacity: 0.4; }
         }
 
+        @keyframes orbitPulse {
+          0%, 100% { transform: translate(-50%, -50%) scale(0.96); opacity: 0.45; }
+          50% { transform: translate(-50%, -50%) scale(1.08); opacity: 0.95; }
+        }
+
+        @keyframes orbitSpin {
+          0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+          100% { transform: translate(-50%, -50%) rotate(360deg) scale(1.04); }
+        }
+
+        @keyframes orbitSpinReverse {
+          0% { transform: translate(-50%, -50%) rotate(360deg) scale(0.98); }
+          100% { transform: translate(-50%, -50%) rotate(0deg) scale(1.03); }
+        }
+
+        @keyframes sparkle {
+          0%, 100% { transform: scale(0.7); opacity: 0.45; }
+          50% { transform: scale(1.25); opacity: 1; }
+        }
+
         @media (max-width: 980px) {
           .hero,
           .two-col,
@@ -1006,7 +1237,11 @@ export default function Page() {
           .process-grid,
           .logo-strip,
           .panel-grid,
-          .hero-proof {
+          .hero-proof,
+          .case-study-grid,
+          .case-metrics {
+            grid-template-columns: 1fr;
+          }
             grid-template-columns: 1fr;
           }
 
@@ -1043,39 +1278,16 @@ export default function Page() {
           .footer-brand {
             align-items: flex-start;
           }
-.hero-logo {
-  height: 320px;
-  width: auto;
-  object-fit: contain;
-}
 
-.logo-insane {
-  height: 180px; /* 🔥 bigger */
-  width: auto;
-  background: transparent;
-  object-fit: contain;
+          .hero-logo {
+            height: 110px;
+          }
 
-  filter:
-  drop-shadow(0 0 12px rgba(59,130,246,0.6))
-  drop-shadow(0 0 24px rgba(139,92,246,0.6));
-
-  animation: floatLogo 4s ease-in-out infinite;
-  transition: all 0.4s ease;
-}
-
-.logo-insane:hover {
-  transform: scale(1.08) rotate(2deg);
-
-  filter:
-  drop-shadow(0 0 16px rgba(59,130,246,0.6))
-drop-shadow(0 0 28px rgba(139,92,246,0.5));
-
-@keyframes floatLogo {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
+          .logo-insane {
+            height: 70px;
+          }
+        }
       `}</style>
-</>
-);
+    </>
+  );
 }
