@@ -76,8 +76,10 @@ export default function Page() {
               <span className="eyebrow">Services</span>
               <h3>What Aguilar Media helps you with</h3>
               <p>
-                Everything is built to make your business feel more established, more trustworthy,
-                and more ready to scale.
+                We create high-quality, attention-grabbing ad creatives for your business and combine them with data-driven strategies to maximize performance and results.
+              </p>
+              <p>
+                Every decision is backed by real data — from targeting to creative — so your ads are optimized to convert, scale, and bring in consistent customers.
               </p>
             </div>
 
@@ -103,29 +105,35 @@ export default function Page() {
           <section id="about" className="section container two-col">
             <div className="glass-card about-main fade-in-up">
               <span className="eyebrow">About</span>
-              <h3>Why Aguilar Media?</h3>
+              <h3>About Aguilar Media</h3>
               <p>
-                Most businesses do not have a traffic problem. They have a perception problem. Their
-                brand feels inconsistent, their message is weak, or their marketing does not look premium
-                enough to justify attention.
+                Aguilar Media is a performance-driven marketing agency built to help modern brands grow faster, scale smarter, and stand out in competitive markets. We don’t rely on guesswork — everything we do is backed by data, strategy, and real market behavior.
               </p>
               <p>
-                Aguilar Media solves that by combining clean presentation, smarter campaign strategy,
-                and stronger creative direction.
+                Our focus is simple: turn attention into revenue. By combining high-converting ad creatives, strong brand positioning, and precise targeting, we help businesses consistently attract the right audience and convert them into paying customers.
+              </p>
+              <p>
+                We work closely with every client to understand their brand, their audience, and their goals — then build campaigns that not only look premium, but perform at a high level.
               </p>
             </div>
             <div className="about-stack">
               <div className="glass-card fade-in-up delay-1">
-                <h4>Professional image</h4>
-                <p>Make your brand feel premium from the first click.</p>
+                <h4>Why Choose Aguilar Media?</h4>
+                <p>
+                  Most agencies focus on vanity metrics like clicks and views. We focus on what actually matters — leads, conversions, and real revenue growth.
+                </p>
               </div>
               <div className="glass-card fade-in-up delay-2">
-                <h4>Clear strategy</h4>
-                <p>Better offers, better creative, better customer journey.</p>
+                <h4>Creative + Data</h4>
+                <p>
+                  We combine attention-grabbing creative ads with data-driven strategies so your campaigns don’t just look good — they perform.
+                </p>
               </div>
               <div className="glass-card fade-in-up delay-3">
-                <h4>Growth focus</h4>
-                <p>Every move is built to increase reach, improve conversions, and support long-term growth.</p>
+                <h4>Built to Scale</h4>
+                <p>
+                  Everything we build is designed for long-term growth, helping your business scale consistently instead of relying on random results.
+                </p>
               </div>
             </div>
           </section>
