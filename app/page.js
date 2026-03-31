@@ -1044,13 +1044,16 @@ export default function Page() {
             align-items: flex-start;
           }
 .hero-logo {
-  height: 240px;
+  height: 320px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-insane {
-  height: 130px;
+  height: 180px; /* 🔥 bigger */
   width: auto;
   background: transparent;
+  object-fit: contain;
 
   filter:
     drop-shadow(0 0 12px rgba(103,232,249,0.6))
