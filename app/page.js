@@ -11,8 +11,27 @@ export default function Page() {
         <header className="topbar">
           <div className="container nav-wrap">
             <div className="brand fade-in-up">
-              <h1>Aguilar Media</h1>
-              <p>Luxury-level performance marketing</p>
+              <div className="brand-mark-wrap">
+                <div className="brand-mark" aria-hidden="true">
+                  <span className="brand-glow" />
+                  <svg viewBox="0 0 100 100" className="brand-svg" role="img">
+                    <defs>
+                      <linearGradient id="aguilarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#67e8f9" />
+                        <stop offset="55%" stopColor="#60a5fa" />
+                        <stop offset="100%" stopColor="#a855f7" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M18 78 L46 18 L59 18 L33 78 Z" fill="url(#aguilarGradient)" />
+                    <path d="M56 32 L83 78 L68 78 L48 46 Z" fill="url(#aguilarGradient)" />
+                    <path d="M35 58 H61 L55 71 H29 Z" fill="url(#aguilarGradient)" />
+                  </svg>
+                </div>
+                <div>
+                  <h1>Aguilar Media</h1>
+                  <p>Luxury-level performance marketing</p>
+                </div>
+              </div>
             </div>
             <nav className="nav-links">
               <a href="#services">Services</a>
@@ -76,28 +95,71 @@ export default function Page() {
               <span className="eyebrow">Services</span>
               <h3>What Aguilar Media helps you with</h3>
               <p>
-                We create high-quality, attention-grabbing ad creatives for your business and combine them with data-driven strategies to maximize performance and results.
+                We create high-quality, attention-grabbing ad creatives for your business and combine them with data-driven strategies to maximize performance, consistency, and growth.
               </p>
               <p>
-                Every decision is backed by real data — from targeting to creative — so your ads are optimized to convert, scale, and bring in consistent customers.
+                Every decision is backed by real data — from targeting to creative direction — so your ads are not only visually strong, but built to convert, scale, and bring in better customers over time.
               </p>
             </div>
 
             <div className="card-grid services-grid">
               <article className="glass-card service-card fade-in-up delay-1">
                 <span className="card-number">01</span>
-                <h4>Digital Advertising</h4>
-                <p>Campaign strategy, ad setup, targeting, and optimization focused on getting results.</p>
+                <h4>Creative Ad Production</h4>
+                <p>
+                  We create clean, modern, attention-grabbing ad creatives that help your business stand out and instantly look more professional online.
+                </p>
               </article>
               <article className="glass-card service-card fade-in-up delay-2">
                 <span className="card-number">02</span>
-                <h4>Content Strategy</h4>
-                <p>Sharper messaging and creative systems that support your ads and strengthen your brand.</p>
+                <h4>Data-Driven Ad Strategy</h4>
+                <p>
+                  We use performance data, audience behavior, and testing to make smarter decisions so your campaigns improve over time instead of relying on guesswork.
+                </p>
               </article>
               <article className="glass-card service-card fade-in-up delay-3">
                 <span className="card-number">03</span>
                 <h4>Brand Positioning</h4>
-                <p>Cleaner presentation and better offers that make your business stand out from competitors.</p>
+                <p>
+                  We help your business present itself in a stronger way, with clearer messaging and more premium branding that builds trust with your audience.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section id="business-help" className="section container">
+            <div className="section-head fade-in-up">
+              <span className="eyebrow">How I Can Help Your Business</span>
+              <h3>Marketing support built to help your business grow with more confidence</h3>
+              <p>
+                A lot of businesses struggle because they have a good product or service, but their marketing does not reflect their actual value. Weak ads, inconsistent branding, and unclear messaging can make a strong business look average.
+              </p>
+              <p>
+                Aguilar Media helps solve that by improving the way your brand is seen online. I can help your business create stronger first impressions, reach the right audience, and build campaigns that are designed to turn interest into action.
+              </p>
+            </div>
+
+            <div className="card-grid process-grid">
+              <article className="glass-card process-card fade-in-up delay-1">
+                <span className="step">01</span>
+                <h4>Make your business look more professional</h4>
+                <p>
+                  Better creative, cleaner messaging, and a more polished online presence can instantly increase trust and make your brand feel more established.
+                </p>
+              </article>
+              <article className="glass-card process-card fade-in-up delay-2">
+                <span className="step">02</span>
+                <h4>Reach the right audience</h4>
+                <p>
+                  Instead of putting content in front of random people, I help position your business in front of the audience most likely to buy, book, or inquire.
+                </p>
+              </article>
+              <article className="glass-card process-card fade-in-up delay-3">
+                <span className="step">03</span>
+                <h4>Improve conversions over time</h4>
+                <p>
+                  Through testing, data, and creative adjustments, your campaigns can improve over time and create a system that produces more consistent results.
+                </p>
               </article>
             </div>
           </section>
@@ -115,12 +177,21 @@ export default function Page() {
               <p>
                 We work closely with every client to understand their brand, their audience, and their goals — then build campaigns that not only look premium, but perform at a high level.
               </p>
+              <p>
+                We believe strong marketing should do more than just get views. It should help a business build trust, look more established, and create a system that supports long-term growth. That is why every part of the strategy — from the creative to the targeting — is built with both brand image and performance in mind.
+              </p>
+              <p>
+                Whether your goal is getting more leads, bringing in more customers, or simply making your business look stronger online, Aguilar Media is built to help you grow with a more professional and results-focused approach.
+              </p>
             </div>
             <div className="about-stack">
               <div className="glass-card fade-in-up delay-1">
                 <h4>Why Choose Aguilar Media?</h4>
                 <p>
-                  Most agencies focus on vanity metrics like clicks and views. We focus on what actually matters — leads, conversions, and real revenue growth.
+                  Most agencies focus on vanity metrics like clicks and views. We focus on what actually matters — leads, conversions, stronger brand perception, and real revenue growth.
+                </p>
+                <p>
+                  Aguilar Media takes a more personal and strategic approach, building campaigns around your actual business goals instead of using the same formula for every client.
                 </p>
               </div>
               <div className="glass-card fade-in-up delay-2">
@@ -282,6 +353,42 @@ export default function Page() {
           align-items: center;
           justify-content: space-between;
           padding: 20px 0;
+        }
+
+        .brand-mark-wrap {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+
+        .brand-mark {
+          position: relative;
+          display: grid;
+          place-items: center;
+          width: 52px;
+          height: 52px;
+          border-radius: 18px;
+          background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+          border: 1px solid rgba(255,255,255,0.12);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+          overflow: hidden;
+        }
+
+        .brand-glow {
+          position: absolute;
+          inset: -20%;
+          background: conic-gradient(from 180deg, rgba(103,232,249,0.0), rgba(103,232,249,0.28), rgba(168,85,247,0.28), rgba(103,232,249,0.0));
+          filter: blur(12px);
+          animation: spinGlow 7s linear infinite;
+        }
+
+        .brand-svg {
+          position: relative;
+          width: 34px;
+          height: 34px;
+          z-index: 1;
+          animation: floatLogo 3.4s ease-in-out infinite;
+          filter: drop-shadow(0 0 14px rgba(103,232,249,0.28));
         }
 
         .brand h1 {
@@ -590,6 +697,18 @@ export default function Page() {
 
         @keyframes floatOrb {
           0%, 100% { transform: translateY(0px) translateX(0px); }
+          50% { transform: translateY(18px) translateX(10px); }
+        }
+
+        @keyframes floatLogo {
+          0%, 100% { transform: translateY(0px) scale(1); }
+          50% { transform: translateY(-3px) scale(1.03); }
+        }
+
+        @keyframes spinGlow {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
           50% { transform: translateY(18px) translateX(10px); }
         }
 
