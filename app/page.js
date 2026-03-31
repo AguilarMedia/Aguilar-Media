@@ -8,22 +8,24 @@ export default function Page() {
         <div className="bg-orb orb-2" />
         <div className="bg-grid" />
 
-        <header className="topbar">
-          <div className="container nav-wrap">
+        <header className="topbar elite-topbar">
+          <div className="container nav-wrap elite-nav-wrap">
             <div className="brand fade-in-up">
               <div className="brand-mark-wrap">
-                <img src="/logo-combo.svg" alt="Aguilar Media Logo" className="logo-img logo-float" />
-                <div>
+                <img src="/logo-combo.svg" alt="Aguilar Media Logo" className="h-20 md:h-24 hover:scale-105 transition duration-300" />
+                <div className="brand-copy">
+                  <span className="brand-kicker">PREMIUM GROWTH STUDIO</span>
                   <h1>Aguilar Media</h1>
                   <p>Luxury-level performance marketing</p>
                 </div>
               </div>
             </div>
-            <nav className="nav-links">
+            <nav className="nav-links elite-nav-links">
               <a href="#services">Services</a>
               <a href="#about">About</a>
               <a href="#process">Process</a>
               <a href="#contact">Contact</a>
+              <a href="#contact" className="nav-cta">Book Call</a>
             </nav>
           </div>
         </header>
@@ -32,7 +34,7 @@ export default function Page() {
           <section className="hero container">
             <div className="hero-copy fade-in-up delay-1">
               <div className="hero-logo-wrap">
-                <img src="/logo-combo.svg" alt="Aguilar Media Hero Logo" className="hero-logo pulse-glow" />
+                <img src="/logo-combo.svg" alt="Aguilar Media Hero Logo" className="h-32 md:h-40 mx-auto mb-6 hover:scale-105 transition duration-300" />
               </div>
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
@@ -243,7 +245,7 @@ export default function Page() {
 
         <footer className="footer container">
           <div className="footer-brand">
-            <img src="/logo-combo.svg" alt="Aguilar Media Footer Logo" className="footer-logo" />
+            <img src="/logo-combo.svg" alt="Aguilar Media Footer Logo" className="h-16 opacity-80" />
             <div>
               <p>© 2026 Aguilar Media. All rights reserved.</p>
               <p>Built for clean branding, better ads, and real business growth.</p>
@@ -343,11 +345,22 @@ export default function Page() {
           border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
+        .elite-topbar {
+          background: linear-gradient(180deg, rgba(2, 6, 23, 0.92), rgba(2, 6, 23, 0.72));
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+          box-shadow: 0 10px 40px rgba(0,0,0,0.28);
+        }
+
         .nav-wrap {
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 20px 0;
+        }
+
+        .elite-nav-wrap {
+          gap: 24px;
+          padding: 18px 0;
         }
 
         .brand-mark-wrap {
@@ -447,6 +460,19 @@ export default function Page() {
           font-size: 0.95rem;
         }
 
+        .brand-copy {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .brand-kicker {
+          color: #67e8f9;
+          font-size: 0.68rem;
+          letter-spacing: 0.18em;
+          margin-bottom: 4px;
+          opacity: 0.9;
+        }
+
         .nav-links {
           display: flex;
           gap: 28px;
@@ -454,8 +480,52 @@ export default function Page() {
           font-size: 0.95rem;
         }
 
+        .elite-nav-links {
+          align-items: center;
+          gap: 24px;
+          padding: 10px 16px;
+          border: 1px solid rgba(255,255,255,0.08);
+          background: rgba(255,255,255,0.03);
+          border-radius: 999px;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+          backdrop-filter: blur(12px);
+        }
+
+        .nav-cta {
+          padding: 12px 18px;
+          border-radius: 999px;
+          background: linear-gradient(135deg, #67e8f9 0%, #a855f7 100%);
+          color: #020617;
+          font-weight: 800;
+          box-shadow: 0 10px 30px rgba(103,232,249,0.18);
+        }
+
+        .nav-cta:hover {
+          transform: translateY(-1px);
+          color: #020617 !important;
+        }
+
         .nav-links a:hover {
           color: #fff;
+        }
+
+        .elite-nav-links a {
+          position: relative;
+        }
+
+        .elite-nav-links a:not(.nav-cta)::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(90deg, #67e8f9, #a855f7);
+          transition: width 0.25s ease;
+        }
+
+        .elite-nav-links a:not(.nav-cta):hover::after {
+          width: 100%;
         }
 
         .hero {
@@ -788,6 +858,20 @@ export default function Page() {
           .logo-strip,
           .panel-grid {
             grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 980px) {
+          .elite-nav-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .elite-nav-links {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-radius: 24px;
           }
         }
 
