@@ -18,7 +18,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="site-shell">
+      <div className="site-shell"> 
         <div className="noise" />
         <div className="bg-orb orb-1" />
         <div className="bg-orb orb-2" />
