@@ -332,11 +332,11 @@ export default function Page() {
                   Ready to upgrade the way your business looks and performs online? Let’s talk about your next move.
                 </p>
               </div>
-              <form className="contact-form">
+              <form    action="https://formspree.io/f/xyzabcd"    method="POST"    className="contact-form" >
                 <input type="text" placeholder="Your Name" />
                 <input type="email" placeholder="Your Email" />
                 <textarea placeholder="Tell me about your business" />
-                <button type="button" className="btn btn-solid">Send Inquiry</button>
+                <button type="submit" className="btn btn-solid">Send Inquiry</button>
               </form>
             </div>
           </section>
