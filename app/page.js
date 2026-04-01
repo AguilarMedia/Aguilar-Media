@@ -72,8 +72,8 @@ export default function Page() {
 
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
-                We help ambitious brands scale
-                <span> with premium positioning, sharper strategy, and websites when needed.</span>
+                Scale your brand with
+                <span> sharper positioning, stronger creative, and a cleaner online presence.</span>
               </h2>
               <p>
                 Aguilar Media helps businesses scale through stronger branding, better creative, data-backed marketing decisions, and website builds for brands that need a cleaner online presence.
