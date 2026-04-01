@@ -202,27 +202,29 @@ I help businesses grow with better branding, stronger content, smarter marketing
               </article>
             </div>
           </section>
+<section id="about" className="section container">
+  <div className="about-box">
+    <span className="eyebrow">About Me</span>
 
-          <section id="about" className="section container two-col">
-            <div className="glass-card about-main fade-in-up tilt-card">
-              <span className="eyebrow">About Me</span>
-              <h3>About Me</h3>
-              <p>
-                Aguilar Media is my freelance service for helping businesses grow, look better online, and reach more customers. We don’t rely on guesswork — everything we do is backed by data, strategy, and real market behavior.
-              </p>
-              <p>
-                My focus is simple: help businesses grow with better branding, stronger content, smarter strategy, and websites when needed.
-              </p>
-              <p>
-                I work closely with each client to understand their business and goals, then build a simple plan that helps them grow online.
-              </p>
-              <p>
-                We believe strong marketing should do more than just get views. It should help a business build trust, look more established, and create a system that supports long-term growth. That is why every part of the strategy — from the creative to the targeting — is built with both brand image and performance in mind.
-              </p>
-              <p>
-                Whether your goal is getting more leads, bringing in more customers, or simply making your business look stronger online, Aguilar Media is built to help you grow with a more professional and results-focused approach.
-              </p>
-            </div>
+    <h3>Simple help to grow your business</h3>
+
+    <p>
+      I run Aguilar Media, a freelance service focused on helping businesses grow online.
+    </p>
+
+    <p>
+      I help improve branding, content, and marketing so your business looks more professional and attracts more customers.
+    </p>
+
+    <p>
+      If needed, I can also build a simple website to give your business a stronger online presence.
+    </p>
+
+    <p>
+      My goal is to keep things simple, clear, and focused on real results.
+    </p>
+  </div>
+</section>
             <div className="about-stack">
               <div className="glass-card fade-in-up delay-1 tilt-card">
                 <h4>Why Work With Me?</h4>
