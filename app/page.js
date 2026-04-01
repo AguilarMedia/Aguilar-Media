@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
- 
+
 export default function Page() {
   useEffect(() => {
     const handleMove = (e) => {
@@ -41,7 +41,7 @@ export default function Page() {
                 <div className="brand-copy">
                   <span className="brand-kicker">PREMIUM GROWTH STUDIO</span>
                   <h1>Aguilar Media</h1>
-                  <p>Luxury-level performance marketing</p>
+                  <p>Premium freelance brand scaling for modern businesses</p>
                 </div>
               </div>
             </a>
@@ -72,12 +72,11 @@ export default function Page() {
 
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
-                We make your brand look
-                <span> expensive, trusted, and impossible to ignore.</span>
+                We help ambitious brands scale
+                <span> with premium positioning, sharper strategy, and websites when needed.</span>
               </h2>
               <p>
-                Aguilar Media helps businesses attract better clients with premium design direction,
-                sharper messaging, creative ads, and high-converting digital campaigns backed by data.
+                Aguilar Media helps businesses scale through stronger branding, better creative, data-backed marketing decisions, and website builds for brands that need a cleaner online presence.
               </p>
 
               <div className="hero-actions">
@@ -87,16 +86,16 @@ export default function Page() {
 
               <div className="hero-proof fade-in-up delay-2">
                 <div className="proof-card glass-card">
-                  <strong>Creative Ads</strong>
-                  <span>Attention-grabbing visuals that make brands feel premium.</span>
+                  <strong>Premium Positioning</strong>
+                  <span>Sharper brand presentation built to make your business look more established.</span>
                 </div>
                 <div className="proof-card glass-card">
                   <strong>Data-Led Strategy</strong>
-                  <span>Every decision is guided by performance, not guesswork.</span>
+                  <span>Growth decisions guided by performance, audience behavior, and testing.</span>
                 </div>
                 <div className="proof-card glass-card">
-                  <strong>Brand Growth</strong>
-                  <span>Cleaner positioning that helps you attract better customers.</span>
+                  <strong>Websites Available</strong>
+                  <span>Clean, premium websites available when your brand needs a stronger online presence.</span>
                 </div>
               </div>
             </div>
@@ -104,10 +103,9 @@ export default function Page() {
             <div className="hero-panel fade-in-up delay-3">
               <div className="glass-card panel-main tilt-card">
                 <p className="mini-label">Positioning + Performance</p>
-                <h3>Agency-level presentation with a growth-first mindset.</h3>
+                <h3>Premium freelance growth support with a brand-first mindset.</h3>
                 <p>
-                  We help your brand feel more high-end online while building a system that drives
-                  leads, inquiries, and sales.
+                  I help brands scale with stronger presentation, better marketing structure, and optional website support when a business needs a better online foundation.
                 </p>
               </div>
               <div className="panel-grid">
@@ -134,35 +132,35 @@ export default function Page() {
           <section id="services" className="section container">
             <div className="section-head fade-in-up">
               <span className="eyebrow">Services</span>
-              <h3>What Aguilar Media helps you with</h3>
+              <h3>Premium support built to help brands scale</h3>
               <p>
-                We create high-quality, attention-grabbing ad creatives for your business and combine them with data-driven strategies to maximize performance, consistency, and growth.
+                I help brands scale through stronger creative, clearer positioning, and data-driven strategy built around growth.
               </p>
               <p>
-                Every decision is backed by real data — from targeting to creative direction — so your ads are not only visually strong, but built to convert, scale, and bring in better customers over time.
+                When needed, I also offer websites to help businesses look more professional online and create a stronger foundation for growth.
               </p>
             </div>
 
             <div className="card-grid services-grid">
               <article className="glass-card service-card fade-in-up delay-1 tilt-card">
                 <span className="card-number">01</span>
-                <h4>Creative Ad Production</h4>
+                <h4>Premium Brand Scaling</h4>
                 <p>
-                  We create clean, modern, attention-grabbing ad creatives that help your business stand out and instantly look more professional online.
+                  I help businesses scale by improving how the brand looks, communicates, and shows up online so it can attract more attention and better customers.
                 </p>
               </article>
               <article className="glass-card service-card fade-in-up delay-2 tilt-card">
                 <span className="card-number">02</span>
-                <h4>Data-Driven Ad Strategy</h4>
+                <h4>Growth Strategy</h4>
                 <p>
-                  We use performance data, audience behavior, and testing to make smarter decisions so your campaigns improve over time instead of relying on guesswork.
+                  I use performance data, audience behavior, and testing to make smarter growth decisions so your marketing improves over time instead of relying on guesswork.
                 </p>
               </article>
               <article className="glass-card service-card fade-in-up delay-3 tilt-card">
                 <span className="card-number">03</span>
-                <h4>Brand Positioning</h4>
+                <h4>Website Builds</h4>
                 <p>
-                  We help your business present itself in a stronger way, with clearer messaging and more premium branding that builds trust with your audience.
+                  If your brand needs a better online presence, I can also build a clean website that makes your business look more professional and ready to grow.
                 </p>
               </article>
             </div>
@@ -171,7 +169,7 @@ export default function Page() {
           <section id="business-help" className="section container">
             <div className="section-head fade-in-up">
               <span className="eyebrow">How I Can Help Your Business</span>
-              <h3>Marketing support built to help your business grow with more confidence</h3>
+              <h3>Premium freelance support built to help your business scale with more confidence</h3>
               <p>
                 A lot of businesses struggle because they have a good product or service, but their marketing does not reflect their actual value. Weak ads, inconsistent branding, and unclear messaging can make a strong business look average.
               </p>
@@ -210,13 +208,13 @@ export default function Page() {
               <span className="eyebrow">About</span>
               <h3>About Aguilar Media</h3>
               <p>
-                Aguilar Media is a performance-driven marketing agency built to help modern brands grow faster, scale smarter, and stand out in competitive markets. We don’t rely on guesswork — everything we do is backed by data, strategy, and real market behavior.
+                Aguilar Media is a freelance brand scaling service built to help modern businesses grow faster, look stronger, and stand out in competitive markets. We don’t rely on guesswork — everything we do is backed by data, strategy, and real market behavior.
               </p>
               <p>
-                Our focus is simple: turn attention into revenue. By combining high-converting ad creatives, strong brand positioning, and precise targeting, we help businesses consistently attract the right audience and convert them into paying customers.
+                My focus is simple: help brands scale in a way that feels professional, strategic, and built for long-term growth. That can mean stronger branding, better creative, smarter strategy, and websites when needed.
               </p>
               <p>
-                We work closely with every client to understand their brand, their audience, and their goals — then build campaigns that not only look premium, but perform at a high level.
+                I work closely with each client to understand their brand, audience, and goals, then build a growth approach that improves how the business looks and performs online.
               </p>
               <p>
                 We believe strong marketing should do more than just get views. It should help a business build trust, look more established, and create a system that supports long-term growth. That is why every part of the strategy — from the creative to the targeting — is built with both brand image and performance in mind.
@@ -227,24 +225,24 @@ export default function Page() {
             </div>
             <div className="about-stack">
               <div className="glass-card fade-in-up delay-1 tilt-card">
-                <h4>Why Choose Aguilar Media?</h4>
+                <h4>Why Aguilar Media?</h4>
                 <p>
-                  Most agencies focus on vanity metrics like clicks and views. We focus on what actually matters — leads, conversions, stronger brand perception, and real revenue growth.
+                  A lot of businesses do not need a huge agency. They need someone who can help them scale with focused support, stronger execution, and a more personal approach.
                 </p>
                 <p>
-                  Aguilar Media takes a more personal and strategic approach, building campaigns around your actual business goals instead of using the same formula for every client.
+                  Aguilar Media is built around that idea — freelance growth support that focuses on your actual goals, your brand, and what will help you grow the fastest.
                 </p>
               </div>
               <div className="glass-card fade-in-up delay-2 tilt-card">
-                <h4>Creative + Data</h4>
+                <h4>Creative + Strategy</h4>
                 <p>
-                  We combine attention-grabbing creative ads with data-driven strategies so your campaigns don’t just look good — they perform.
+                  I combine creative thinking with data-backed strategy so your brand does not just look better — it scales smarter.
                 </p>
               </div>
               <div className="glass-card fade-in-up delay-3 tilt-card">
-                <h4>Built to Scale</h4>
+                <h4>Websites If Needed</h4>
                 <p>
-                  Everything we build is designed for long-term growth, helping your business scale consistently instead of relying on random results.
+                  If your current site is holding your brand back, I can also build a cleaner website that supports trust, conversion, and growth.
                 </p>
               </div>
             </div>
@@ -329,14 +327,14 @@ export default function Page() {
                 <span className="eyebrow">Contact</span>
                 <h3>Let’s build a stronger brand presence.</h3>
                 <p>
-                  Ready to upgrade the way your business looks and performs online? Let’s talk about your next move.
+                  Ready to scale your brand, sharpen your presence, or get a cleaner website built? Let’s talk about the next move for your business.
                 </p>
               </div>
-              <form    action="https://formspree.io/f/xyzabcd"    method="POST"    className="contact-form" >
+              <form className="contact-form">
                 <input type="text" placeholder="Your Name" />
                 <input type="email" placeholder="Your Email" />
                 <textarea placeholder="Tell me about your business" />
-                <button type="submit" className="btn btn-solid">Send Inquiry</button>
+                <button type="button" className="btn btn-solid">Send Inquiry</button>
               </form>
             </div>
           </section>
@@ -1280,9 +1278,8 @@ export default function Page() {
           }
 
           .hero-logo {
-  height: 450px;   /* bigger */
-  width: auto;
-  object-fit: contain;}
+            height: 110px;
+          }
 
           .logo-insane {
             height: 70px;
