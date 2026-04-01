@@ -1280,7 +1280,10 @@ export default function Page() {
           }
 
           .hero-logo {
-            height: 110px;
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+}
           }
 
           .logo-insane {
