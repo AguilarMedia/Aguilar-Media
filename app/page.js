@@ -337,7 +337,6 @@ export default function Page() {
   <textarea name="message" placeholder="Tell me about your business" />
   <button type="submit" className="btn btn-solid">Send Inquiry</button>
 </form>
-</form>
             </div>
           </section>
         </main>
