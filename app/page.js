@@ -103,19 +103,19 @@ export default function Page() {
             <div className="hero-panel fade-in-up delay-3">
               <div className="glass-card panel-main tilt-card">
                 <p className="mini-label">Positioning + Performance</p>
-                <h3>Premium freelance growth support with a brand-first mindset.</h3>
+                <h3>Simple freelance support to help your business grow.</h3>
                 <p>
-                  I help brands scale with stronger presentation, better marketing structure, and optional website support when a business needs a better online foundation.
+I help businesses grow with better branding, stronger content, smarter marketing, and websites when needed.
                 </p>
               </div>
               <div className="panel-grid">
                 <div className="glass-card stat-card tilt-card">
-                  <strong>Premium Image</strong>
-                  <span>Clean visuals. Better trust. Stronger first impression.</span>
+                 <strong>Better Branding</strong>
+<span>Make your business look clearer, more professional, and easier to trust.</span>
                 </div>
                 <div className="glass-card stat-card tilt-card">
-                  <strong>Higher Return</strong>
-                  <span>Smarter campaigns designed to convert attention into revenue.</span>
+                 <strong>Smarter Strategy</strong>
+<span>Use real results and testing to make better growth decisions.</span>
                 </div>
               </div>
             </div>
