@@ -287,7 +287,6 @@ I help businesses grow with better branding, stronger content, smarter marketing
               <p>Built for clean branding, better ads, and real business growth.</p>
             </div>
           </div>
-          <p className="favicon-note">Use this same logo as your site favicon.</p>
         </footer>
       </div>
 
