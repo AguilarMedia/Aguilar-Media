@@ -39,7 +39,7 @@ export default function Page() {
                   <span className="logo-shimmer" />
                 </div>
                 <div className="brand-copy">
-                  <span className="brand-kicker">PREMIUM GROWTH STUDIO</span>
+                  <span className="brand-kicker">BRAND SCALING</span>
                   <h1>Aguilar Media</h1>
                   <p>Premium freelance brand scaling for modern businesses</p>
                 </div>
@@ -47,12 +47,12 @@ export default function Page() {
             </a>
 
             <nav className="nav-links elite-nav-links">
-              <a href="#services">Services</a>
-              <a href="#business-help">Value</a>
+              <a href="#services">What I Do</a>
+              <a href="#business-help">How I Help</a>
               <a href="#about">About</a>
               <a href="#case-study">Results</a>
-              <a href="#process">Process</a>
-              <a href="#contact" className="nav-cta">Book Call</a>
+              <a href="#process">How I Work</a>
+              <a href="#contact" className="nav-cta">Contact Me</a>
             </nav>
           </div>
         </header>
@@ -72,30 +72,30 @@ export default function Page() {
 
               <span className="eyebrow">Built for premium brands and serious growth</span>
               <h2>
-                Scale your brand with
-                <span> sharper positioning, stronger creative, and a cleaner online presence.</span>
+                Grow your brand with
+                <span> better content, smarter strategy, and a cleaner online presence.</span>
               </h2>
               <p>
-                Aguilar Media helps businesses scale through stronger branding, better creative, data-backed marketing decisions, and website builds for brands that need a cleaner online presence.
+                I help businesses grow with better branding, stronger content, smarter marketing, and websites when needed.
               </p>
 
               <div className="hero-actions">
-                <a href="#contact" className="btn btn-solid">Book a Strategy Call</a>
-                <a href="#services" className="btn btn-ghost">View Services</a>
+                <a href="#contact" className="btn btn-solid">Contact Me</a>
+                <a href="#services" className="btn btn-ghost">See What I Do</a>
               </div>
 
               <div className="hero-proof fade-in-up delay-2">
                 <div className="proof-card glass-card">
-                  <strong>Premium Positioning</strong>
-                  <span>Sharper brand presentation built to make your business look more established.</span>
+                  <strong>Better Branding</strong>
+                  <span>Make your business look more clear, professional, and trustworthy.</span>
                 </div>
                 <div className="proof-card glass-card">
-                  <strong>Data-Led Strategy</strong>
-                  <span>Growth decisions guided by performance, audience behavior, and testing.</span>
+                  <strong>Smarter Strategy</strong>
+                  <span>Use real results and testing to make better growth decisions.</span>
                 </div>
                 <div className="proof-card glass-card">
-                  <strong>Websites Available</strong>
-                  <span>Clean, premium websites available when your brand needs a stronger online presence.</span>
+                  <strong>Website Help</strong>
+                  <span>I can also build a simple website if your business needs one.</span>
                 </div>
               </div>
             </div>
@@ -131,36 +131,36 @@ export default function Page() {
 
           <section id="services" className="section container">
             <div className="section-head fade-in-up">
-              <span className="eyebrow">Services</span>
-              <h3>Premium support built to help brands scale</h3>
+              <span className="eyebrow">What I Do</span>
+              <h3>How I can help your business grow</h3>
               <p>
-                I help brands scale through stronger creative, clearer positioning, and data-driven strategy built around growth.
+                I help brands grow with better content, clearer branding, and smarter marketing.
               </p>
               <p>
-                When needed, I also offer websites to help businesses look more professional online and create a stronger foundation for growth.
+                If needed, I also offer websites to help businesses look better online.
               </p>
             </div>
 
             <div className="card-grid services-grid">
               <article className="glass-card service-card fade-in-up delay-1 tilt-card">
                 <span className="card-number">01</span>
-                <h4>Premium Brand Scaling</h4>
+                <h4>Brand Growth</h4>
                 <p>
-                  I help businesses scale by improving how the brand looks, communicates, and shows up online so it can attract more attention and better customers.
+                  I help businesses grow by improving how the brand looks and communicates online.
                 </p>
               </article>
               <article className="glass-card service-card fade-in-up delay-2 tilt-card">
                 <span className="card-number">02</span>
-                <h4>Growth Strategy</h4>
+                <h4>Marketing Strategy</h4>
                 <p>
-                  I use performance data, audience behavior, and testing to make smarter growth decisions so your marketing improves over time instead of relying on guesswork.
+                  I use data and testing to improve your marketing over time instead of guessing.
                 </p>
               </article>
               <article className="glass-card service-card fade-in-up delay-3 tilt-card">
                 <span className="card-number">03</span>
-                <h4>Website Builds</h4>
+                <h4>Websites</h4>
                 <p>
-                  If your brand needs a better online presence, I can also build a clean website that makes your business look more professional and ready to grow.
+                  If your business needs a website, I can build one that is clean and easy to use.
                 </p>
               </article>
             </div>
@@ -169,7 +169,7 @@ export default function Page() {
           <section id="business-help" className="section container">
             <div className="section-head fade-in-up">
               <span className="eyebrow">How I Can Help Your Business</span>
-              <h3>Premium freelance support built to help your business scale with more confidence</h3>
+              <h3>Simple support to help your business grow</h3>
               <p>
                 A lot of businesses struggle because they have a good product or service, but their marketing does not reflect their actual value. Weak ads, inconsistent branding, and unclear messaging can make a strong business look average.
               </p>
@@ -205,16 +205,16 @@ export default function Page() {
 
           <section id="about" className="section container two-col">
             <div className="glass-card about-main fade-in-up tilt-card">
-              <span className="eyebrow">About</span>
-              <h3>About Aguilar Media</h3>
+              <span className="eyebrow">About Me</span>
+              <h3>About Me</h3>
               <p>
-                Aguilar Media is a freelance brand scaling service built to help modern businesses grow faster, look stronger, and stand out in competitive markets. We don’t rely on guesswork — everything we do is backed by data, strategy, and real market behavior.
+                Aguilar Media is my freelance service for helping businesses grow, look better online, and reach more customers. We don’t rely on guesswork — everything we do is backed by data, strategy, and real market behavior.
               </p>
               <p>
-                My focus is simple: help brands scale in a way that feels professional, strategic, and built for long-term growth. That can mean stronger branding, better creative, smarter strategy, and websites when needed.
+                My focus is simple: help businesses grow with better branding, stronger content, smarter strategy, and websites when needed.
               </p>
               <p>
-                I work closely with each client to understand their brand, audience, and goals, then build a growth approach that improves how the business looks and performs online.
+                I work closely with each client to understand their business and goals, then build a simple plan that helps them grow online.
               </p>
               <p>
                 We believe strong marketing should do more than just get views. It should help a business build trust, look more established, and create a system that supports long-term growth. That is why every part of the strategy — from the creative to the targeting — is built with both brand image and performance in mind.
@@ -225,24 +225,24 @@ export default function Page() {
             </div>
             <div className="about-stack">
               <div className="glass-card fade-in-up delay-1 tilt-card">
-                <h4>Why Aguilar Media?</h4>
+                <h4>Why Work With Me?</h4>
                 <p>
-                  A lot of businesses do not need a huge agency. They need someone who can help them scale with focused support, stronger execution, and a more personal approach.
+                  A lot of businesses do not need a big agency. They need simple, focused help that actually improves results.
                 </p>
                 <p>
-                  Aguilar Media is built around that idea — freelance growth support that focuses on your actual goals, your brand, and what will help you grow the fastest.
+                  That is what I focus on: clear help, simple communication, and work that supports your real business goals.
                 </p>
               </div>
               <div className="glass-card fade-in-up delay-2 tilt-card">
-                <h4>Creative + Strategy</h4>
+                <h4>Content + Strategy</h4>
                 <p>
-                  I combine creative thinking with data-backed strategy so your brand does not just look better — it scales smarter.
+                  I combine content and strategy so your business does not just look better — it grows better too.
                 </p>
               </div>
               <div className="glass-card fade-in-up delay-3 tilt-card">
-                <h4>Websites If Needed</h4>
+                <h4>Website Support</h4>
                 <p>
-                  If your current site is holding your brand back, I can also build a cleaner website that supports trust, conversion, and growth.
+                  If your current site is weak or outdated, I can build a cleaner one that supports your business better.
                 </p>
               </div>
             </div>
@@ -250,19 +250,19 @@ export default function Page() {
 
           <section id="case-study" className="section container">
             <div className="section-head fade-in-up">
-              <span className="eyebrow">Case Study</span>
-              <h3>Results that show what strong creative and strategy can do</h3>
+              <span className="eyebrow">Results</span>
+              <h3>Example results</h3>
               <p>
-                This example shows how better positioning, stronger ad creative, and cleaner campaign strategy can help a brand get more attention, stronger engagement, and better conversion performance.
+                This example shows how stronger branding and smarter marketing can improve results.
               </p>
             </div>
 
             <div className="case-study-grid">
               <div className="glass-card case-main fade-in-up tilt-card">
                 <span className="case-tag">Featured Result</span>
-                <h4>Premium apparel brand growth campaign</h4>
+                <h4>Brand growth example</h4>
                 <p>
-                  We improved the brand’s presentation with cleaner visuals, sharper messaging, and stronger creative direction. Then we supported that with more focused ad strategy and data-based optimization.
+                  The brand improved its look, messaging, and strategy. That helped it get better results over time.
                 </p>
                 <div className="case-metrics">
                   <div className="metric-card">
@@ -274,7 +274,7 @@ export default function Page() {
                     <span>More qualified leads</span>
                   </div>
                   <div className="metric-card">
-                    <strong>-22%</strong>
+                    <strong>22% lower</strong>
                     <span>Lower cost per result</span>
                   </div>
                 </div>
@@ -282,15 +282,15 @@ export default function Page() {
 
               <div className="case-side">
                 <div className="glass-card fade-in-up delay-1 tilt-card">
-                  <h4>What changed</h4>
+                  <h4>What improved</h4>
                   <p>
-                    We upgraded the creative style, improved the brand’s offer positioning, and tested stronger hooks designed to stop attention and drive more serious traffic.
+                    The branding became clearer, the message got stronger, and the marketing improved.
                   </p>
                 </div>
                 <div className="glass-card fade-in-up delay-2 tilt-card">
-                  <h4>Why it worked</h4>
+                  <h4>Why it helped</h4>
                   <p>
-                    Instead of relying on random content, the campaign was built around visuals that felt premium and messaging that was aligned with what the audience actually responded to.
+                    It worked because the brand became easier to understand and the marketing became more focused.
                   </p>
                 </div>
               </div>
@@ -300,23 +300,23 @@ export default function Page() {
           <section id="process" className="section container">
             <div className="section-head fade-in-up">
               <span className="eyebrow">Process</span>
-              <h3>How growth happens</h3>
+              <h3>How I work</h3>
             </div>
             <div className="card-grid process-grid">
               <article className="glass-card process-card fade-in-up delay-1 tilt-card">
                 <span className="step">01</span>
-                <h4>Attract</h4>
-                <p>Use stronger hooks, sharper visuals, and better positioning to get noticed by the right people.</p>
+                <h4>Understand</h4>
+                <p>First, I learn about your business, audience, and goals.</p>
               </article>
               <article className="glass-card process-card fade-in-up delay-2 tilt-card">
                 <span className="step">02</span>
-                <h4>Convert</h4>
-                <p>Turn attention into action with clearer messaging, stronger offers, and a cleaner journey.</p>
+                <h4>Improve</h4>
+                <p>Then I improve the branding, content, strategy, or website based on what you need most.</p>
               </article>
               <article className="glass-card process-card fade-in-up delay-3 tilt-card">
                 <span className="step">03</span>
-                <h4>Scale</h4>
-                <p>Keep refining the system so your business grows in a way that feels repeatable and premium.</p>
+                <h4>Grow</h4>
+                <p>After that, we keep improving so your business can grow more consistently.</p>
               </article>
             </div>
           </section>
@@ -325,18 +325,18 @@ export default function Page() {
             <div className="contact-box fade-in-up tilt-card">
               <div>
                 <span className="eyebrow">Contact</span>
-                <h3>Let’s build a stronger brand presence.</h3>
+                <h3>Let’s talk about your business.</h3>
                 <p>
-                  Ready to scale your brand, sharpen your presence, or get a cleaner website built? Let’s talk about the next move for your business.
+                  If you want help with branding, marketing, or a website, send me a message.
                 </p>
               </div>
-           <form action="https://formspree.io/f/xbdpkodd" method="POST" className="contact-form">
+              <form action="https://formspree.io/f/xbdpkodd" method="POST" className="contact-form">
   <input type="hidden" name="_subject" value="New Client Inquiry - Aguilar Media" />
   <input type="text" name="name" placeholder="Your Name" />
   <input type="email" name="email" placeholder="Your Email" />
   <textarea name="message" placeholder="Tell me about your business" />
   <button type="submit" className="btn btn-solid">Send Inquiry</button>
-</form>
+              </form>
             </div>
           </section>
         </main>
@@ -368,7 +368,7 @@ export default function Page() {
 
         body {
           margin: 0;
-          font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          font-family: Arial, Helvetica, sans-serif;
           background: #020617;
           color: #fff;
         }
@@ -624,8 +624,8 @@ export default function Page() {
 
         .elite-nav-links {
           align-items: center;
-          gap: 24px;
-          padding: 10px 16px;
+          gap: 18px;
+          padding: 10px 14px;
           border: 1px solid rgba(255,255,255,0.08);
           background: rgba(255,255,255,0.03);
           border-radius: 999px;
@@ -672,10 +672,10 @@ export default function Page() {
 
         .hero {
           display: grid;
-          grid-template-columns: 1.1fr 0.9fr;
-          gap: 48px;
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
           align-items: center;
-          padding: 96px 0 56px;
+          padding: 80px 0 40px;
         }
 
         .hero-logo-wrap {
@@ -750,7 +750,7 @@ export default function Page() {
 
         .hero-copy h2 {
           margin: 0;
-          font-size: clamp(3rem, 7vw, 5.6rem);
+          font-size: clamp(2.5rem, 6vw, 4.5rem);
           line-height: 0.98;
           letter-spacing: -0.06em;
           max-width: 12ch;
@@ -765,11 +765,11 @@ export default function Page() {
         }
 
         .hero-copy p {
-          margin: 22px 0 0;
+          margin: 18px 0 0;
           max-width: 640px;
           color: #cbd5e1;
-          font-size: 1.08rem;
-          line-height: 1.9;
+          font-size: 1rem;
+          line-height: 1.7;
         }
 
         .hero-actions {
@@ -882,8 +882,8 @@ export default function Page() {
         .process-card,
         .about-main,
         .about-stack .glass-card {
-          border-radius: 28px;
-          padding: 28px;
+          border-radius: 22px;
+          padding: 22px;
         }
 
         .panel-main h3,
@@ -1031,7 +1031,7 @@ export default function Page() {
         }
 
         .section {
-          padding: 88px 0;
+          padding: 64px 0;
         }
 
         .section-head {
