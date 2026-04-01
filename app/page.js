@@ -330,12 +330,13 @@ export default function Page() {
                   Ready to scale your brand, sharpen your presence, or get a cleaner website built? Let’s talk about the next move for your business.
                 </p>
               </div>
-              <form className="contact-form">
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="Your Email" />
-                <textarea placeholder="Tell me about your business" />
-                <button type="button" className="btn btn-solid">Send Inquiry</button>
-              </form>
+           <formaction="https://formspree.io/f/xbdpkodd" method="POST" className="contact-form">
+  <input type="hidden" name="_subject" value="New Client Inquiry - Aguilar Media" />
+  <input type="text" name="name" placeholder="Your Name" />
+  <input type="email" name="email" placeholder="Your Email" />
+  <textarea name="message" placeholder="Tell me about your business" />
+  <button type="submit" className="btn btn-solid">Send Inquiry</button>
+</form>
             </div>
           </section>
         </main>
