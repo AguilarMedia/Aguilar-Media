@@ -205,7 +205,6 @@ I help businesses grow with better branding, stronger content, smarter marketing
 <section id="about" className="section container">
   <div className="about-box">
     <span className="eyebrow">About Me</span>
-
     <h3>Simple help to grow your business</h3>
 
     <p>
@@ -225,79 +224,16 @@ I help businesses grow with better branding, stronger content, smarter marketing
     </p>
   </div>
 </section>
-            <div className="about-stack">
-              <div className="glass-card fade-in-up delay-1 tilt-card">
-                <h4>Why Work With Me?</h4>
-                <p>
-                  A lot of businesses do not need a big agency. They need simple, focused help that actually improves results.
-                </p>
-                <p>
-                  That is what I focus on: clear help, simple communication, and work that supports your real business goals.
-                </p>
-              </div>
-              <div className="glass-card fade-in-up delay-2 tilt-card">
-                <h4>Content + Strategy</h4>
-                <p>
-                  I combine content and strategy so your business does not just look better — it grows better too.
-                </p>
-              </div>
-              <div className="glass-card fade-in-up delay-3 tilt-card">
-                <h4>Website Support</h4>
-                <p>
-                  If your current site is weak or outdated, I can build a cleaner one that supports your business better.
-                </p>
-              </div>
-            </div>
-          </section>
 
           <section id="case-study" className="section container">
-            <div className="section-head fade-in-up">
-              <span className="eyebrow">Results</span>
-              <h3>Example results</h3>
-              <p>
-                This example shows how stronger branding and smarter marketing can improve results.
-              </p>
-            </div>
-
-            <div className="case-study-grid">
-              <div className="glass-card case-main fade-in-up tilt-card">
-                <span className="case-tag">Featured Result</span>
-                <h4>Brand growth example</h4>
-                <p>
-                  The brand improved its look, messaging, and strategy. That helped it get better results over time.
-                </p>
-                <div className="case-metrics">
-                  <div className="metric-card">
-                    <strong>+42%</strong>
-                    <span>Higher click-through rate</span>
-                  </div>
-                  <div className="metric-card">
-                    <strong>+31%</strong>
-                    <span>More qualified leads</span>
-                  </div>
-                  <div className="metric-card">
-                    <strong>22% lower</strong>
-                    <span>Lower cost per result</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="case-side">
-                <div className="glass-card fade-in-up delay-1 tilt-card">
-                  <h4>What improved</h4>
-                  <p>
-                    The branding became clearer, the message got stronger, and the marketing improved.
-                  </p>
-                </div>
-                <div className="glass-card fade-in-up delay-2 tilt-card">
-                  <h4>Why it helped</h4>
-                  <p>
-                    It worked because the brand became easier to understand and the marketing became more focused.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+  <div className="section-head">
+    <span className="eyebrow">Results</span>
+    <h2>Example results</h2>
+    <p>
+      This example shows how stronger branding and smarter marketing can improve results.
+    </p>
+  </div>
+</section>
 
           <section id="process" className="section container">
             <div className="section-head fade-in-up">
